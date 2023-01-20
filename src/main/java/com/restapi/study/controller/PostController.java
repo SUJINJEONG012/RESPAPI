@@ -12,7 +12,6 @@ import com.restapi.study.service.PostService;
 
 @RestController
 @RequestMapping("/api/posts")
-
 public class PostController {
 	
 	private PostService postService;
@@ -26,4 +25,6 @@ public class PostController {
 		PostDto postResponse = postService.createPost(postDto);
 		return new ResponseEntity<>(postResponse, HttpStatus.CREATED);
 	}
+
+
 }
